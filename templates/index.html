@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Salary Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="v1" placeholder="v1" required="required" />
+      <input type="text" name="v2" placeholder="v2" required="required" />
+      <input type="text" name="v3" placeholder="v3" required="required" />
+      <input type="text" name="v4" placeholder="v4" required="required" />
+      <input type="text" name="v5" placeholder="v5" required="required" />
+      <input type="text" name="v6" placeholder="v6" required="required" />
+      <input type="text" name="v7" placeholder="v7" required="required" />
+      <input type="text" name="v8" placeholder="v8" required="required" />
+      <input type="text" name="v9" placeholder="v9" required="required" />
+      <input type="text" name="v10" placeholder="v10" required="required" />
+      <input type="text" name="v11" placeholder="v11" required="required" />
+      <input type="text" name="v12" placeholder="v12" required="required" />
+      <input type="text" name="v13" placeholder="v13" required="required" />
+      <input type="text" name="v14" placeholder="v14" required="required" />
+      <input type="text" name="v15" placeholder="v15" required="required" />
+      <input type="text" name="v16" placeholder="v16" required="required" />
+      <input type="text" name="v17" placeholder="v17" required="required" />
+      <input type="text" name="v18" placeholder="v18" required="required" />
+      <input type="text" name="v19" placeholder="v19" required="required" />
+      <input type="text" name="v20" placeholder="v20" required="required" />
+      <input type="text" name="v21" placeholder="v21" required="required" />
+      <input type="text" name="v22" placeholder="v22" required="required" />
+      <input type="text" name="v23" placeholder="v23" required="required" />
+        <input type="text" name="v24" placeholder="v24" required="required" />
+        <input type="text" name="v25" placeholder="v25" required="required" />
+        <input type="text" name="v26" placeholder="v26" required="required" />
+        <input type="text" name="v27" placeholder="v27" required="required" />
+        <input type="text" name="v28" placeholder="v28" required="required" />
+
+		<input type="text" name="v29" placeholder="Amount" required="required" />
+
+		<input type="text" name="v30" placeholder="Time" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ pred }}
+
+ </div>
+
+
+</body>
+</html>
